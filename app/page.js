@@ -26,6 +26,11 @@ export default function Home() {
           <li>
             <Link href="/nav_bar">Responsive navbar with Material UI</Link>
           </li>
+          <li>
+            <Link href="/signup_form">
+              SignUp Form with Material UI and validation
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
