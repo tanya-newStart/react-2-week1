@@ -17,6 +17,12 @@ export default function Home() {
               Rover Photos - Render using useEffect()
             </Link>
           </li>
+          <li>
+            <Link href="/latest_image">EPIC latest image available</Link>
+          </li>
+          <li>
+            <Link href="/nasa_image">EPIC image using dynamic route</Link>
+          </li>
         </ol>
       </main>
     </div>
