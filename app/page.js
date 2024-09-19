@@ -23,6 +23,9 @@ export default function Home() {
           <li>
             <Link href="/nasa_image">EPIC image using dynamic route</Link>
           </li>
+          <li>
+            <Link href="/nav_bar">Responsive navbar with Material UI</Link>
+          </li>
         </ol>
       </main>
     </div>
