@@ -30,10 +30,20 @@ export default function Navbar() {
     { text: "Contact", link: "/nav_bar/contact" },
   ];
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      sx={{
+        background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
+        boxShadow: "none",
+        padding: "0.5rem 0",
+      }}
+    >
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          My Website
+        <Typography
+          variant="h6"
+          sx={{ flexGrow: 1, fontWeight: "bold", letterSpacing: 1.5 }}
+        >
+          StufHub
         </Typography>
 
         {isMobile ? (
@@ -45,11 +55,11 @@ export default function Navbar() {
               sx={{ mr: 2 }}
               onClick={toggleDrawer}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ fontSize: 30, color: "#fff" }} />
             </IconButton>
             <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
               <Box
-                sx={{ width: 250 }}
+                sx={{ width: 250, padding: "1rem" }}
                 role="presentation"
                 onClick={toggleDrawer}
                 onKeyDown={toggleDrawer}
