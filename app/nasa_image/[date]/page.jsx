@@ -19,7 +19,7 @@ export default function EpicImage({ params }) {
       try {
         const url = `https://api.nasa.gov/EPIC/api/natural/date/${date}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`;
 
-        const response = await fetch(url);
+        const response = await fetch(url, { cache: "no-store" });
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
