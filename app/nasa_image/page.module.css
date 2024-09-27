@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  margin: auto;
+}
+
+.info {
+  padding: 25px;
+  margin: 25px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
